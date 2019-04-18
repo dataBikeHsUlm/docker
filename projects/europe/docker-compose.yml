@@ -113,9 +113,10 @@ services:
     image: pelias/elasticsearch
     container_name: pelias_elasticsearch
     restart: always
-    environment: [ "ES_JAVA_OPTS=-Xmx8g" ]
+    environment: [ "ES_JAVA_OPTS=-Xmx12g" ]
     ports: [ "9200:9200", "9300:9300" ]
     volumes:
+      - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro"
       - "${DATA_DIR}/elasticsearch:/usr/share/elasticsearch/data"
     ulimits:
       memlock:
