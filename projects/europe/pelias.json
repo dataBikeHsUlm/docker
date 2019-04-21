@@ -1,12 +1,4 @@
 {
-  "api": {
-    "targets": {
-      "layers_by_source": {
-        "custom-data": ["geonames2d"],
-        "geonames": ["country", "macroregion", "region", "county", "localadmin", "locality", "borough", "neighbourhood", "venue", "postalcode"]
-      }
-    }
-  },
   "logger": {
     "level": "info",
     "timestamp": false
@@ -32,6 +24,12 @@
     }
   },
    "api": {
+    "targets": {
+      "layers_by_source": {
+         "custom-data": ["geonames2d"],
+          "geonames": ["country", "macroregion", "region", "county", "localadmin", "locality", "borough", "neighbourhood", "venue", "postalcode"]
+      }
+    },
     "textAnalyzer": "libpostal",
     "services": {
       "pip": { "url": "http://pip:4200" },
