@@ -49,7 +49,7 @@
       "enabled": true
     },
     "geonames": {
-      "datapath": "/data/geonames",
+      "datapath": "/data/geonames-postalcodes",
       "countryCode": "ALL"
     },
     "openstreetmap": {
@@ -69,12 +69,17 @@
     },
     "polyline": {
       "datapath": "/data/polylines",
-      "files": [ "extract.0sv" ]
+      "files": [ "europe.polyline" ]
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "importVenues": false,
       "importPostalcodes": true
+    },
+    "csv": {
+     "datapath": "/data/geonames2dpostalcodes",
+      "files": [],
+      "download": []
     }
   }
 }
