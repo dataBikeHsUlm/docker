@@ -75,7 +75,7 @@
       "importPostalcodes": true
     },
     "csv": {
-     "datapath": "/data/geonames2dpostalcodes",
+     "datapath": "/data/geonames-postalcodes",
       "files": [],
       "download": []
     }
