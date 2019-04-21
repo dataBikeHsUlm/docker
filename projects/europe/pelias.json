@@ -47,8 +47,9 @@
       "enabled": true
     },
     "geonames": {
-      "datapath": "/data/geonames-postalcodes",
-      "countryCode": "ALL"
+      "datapath": "/data/geonames",
+      "countryCode": "ALL",
+      "sourceURL": "http://download.geonames.org/export/dump/"
     },
     "openstreetmap": {
       "download": [
