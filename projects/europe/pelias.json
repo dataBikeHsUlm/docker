@@ -26,7 +26,7 @@
    "api": {
     "targets": {
       "layers_by_source": {
-         "custom-data": ["geonames2d"],
+         "geonames-2d": ["geonames2d"],
           "geonames": ["country", "macroregion", "region", "county", "localadmin", "locality", "borough", "neighbourhood", "venue", "postalcode"]
       }
     },
