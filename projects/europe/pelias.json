@@ -74,7 +74,8 @@
       "datapath": "/data/whosonfirst-sqlite",
       "sqlite": true,
       "importVenues": false,
-      "importPostalcodes": true
+      "importPostalcodes": true,
+      "importPlace": [ "102191581" ]
     },
     "csv": {
      "datapath": "/data/geonames-postalcodes",
