@@ -17,7 +17,7 @@
         "number_of_shards": "1"
       }
     }
-  },
+  },50.789864, 4.361377
   "api": {
     "textAnalyzer": "libpostal",
     "services": {

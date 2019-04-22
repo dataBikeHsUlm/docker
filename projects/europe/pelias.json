@@ -73,7 +73,8 @@
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "importVenues": false,
-      "importPostalcodes": true
+      "importPostalcodes": true,
+      "importPlace": [ "85632997" ]
     },
     "csv": {
      "datapath": "/data/geonames-postalcodes",
