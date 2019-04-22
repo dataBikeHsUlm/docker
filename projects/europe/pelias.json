@@ -78,7 +78,7 @@
       "importPlace": [ "102191581" ]
     },
     "csv": {
-     "datapath": "/data/geonames-postalcodes",
+     "datapath": "/data/geonames2dpostalcodes/",
       "files": [],
       "download": []
     }
