@@ -71,7 +71,7 @@
       "files": [ "europe.polyline" ]
     },
     "whosonfirst": {
-      "datapath": "/data/whosonfirst-sqlite",
+      "datapath": "/data/whosonfirst",
       "sqlite": true,
       "importVenues": false,
       "importPostalcodes": true,
