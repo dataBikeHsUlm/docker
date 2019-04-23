@@ -6,7 +6,9 @@
   "esclient": {
     "apiVersion": "2.4",
     "hosts": [
-      { "host": "elasticsearch" }
+      {
+        "host": "elasticsearch"
+      }
     ]
   },
   "elasticsearch": {
@@ -23,19 +25,90 @@
       "docker": "http://api:4000/v1/"
     }
   },
-   "api": {
+  "api": {
     "targets": {
       "layers_by_source": {
-         "geonames2d": ["country", "postalcode", "source","layer"],
-          "geonames": ["country", "macroregion", "region", "county", "localadmin", "locality", "borough", "neighbourhood", "venue", "postalcode"]
+        "geonames2d": [
+          "country",
+          "postalcode",
+          "source",
+          "layer"
+        ],
+        "openstreetmap": [
+          "address",
+          "venue",
+          "street"
+        ],
+        "openaddresses": [
+          "address"
+        ],
+        "geonames": [
+          "country",
+          "macroregion",
+          "region",
+          "county",
+          "localadmin",
+          "locality",
+          "borough",
+          "neighbourhood",
+          "venue",
+          "postalcode"
+        ],
+        "whosonfirst": [
+          "continent",
+          "empire",
+          "country",
+          "dependency",
+          "macroregion",
+          "region",
+          "locality",
+          "localadmin",
+          "macrocounty",
+          "county",
+          "macrohood",
+          "borough",
+          "neighbourhood",
+          "microhood",
+          "disputed",
+          "venue",
+          "postalcode",
+          "continent",
+          "ocean",
+          "marinearea"
+        ]
+      },
+      "source_aliases": {
+        "osm": [
+          "openstreetmap"
+        ],
+        "oa": [
+          "openaddresses"
+        ],
+        "gn": [
+          "geonames"
+        ],
+        "wof": [
+          "whosonfirst"
+        ],
+        "2dpg": [
+          "geonames2d"
+        ]
       }
     },
     "textAnalyzer": "libpostal",
     "services": {
-      "pip": { "url": "http://pip:4200" },
-      "libpostal": { "url": "http://libpostal:4400" },
-      "placeholder": { "url": "http://placeholder:4100" },
-      "interpolation": { "url": "http://interpolation:4300" }
+      "pip": {
+        "url": "http://pip:4200"
+      },
+      "libpostal": {
+        "url": "http://libpostal:4400"
+      },
+      "placeholder": {
+        "url": "http://placeholder:4100"
+      },
+      "interpolation": {
+        "url": "http://interpolation:4300"
+      }
     },
     "defaultParameters": {
       "focus.point.lat": 48.88,
@@ -53,13 +126,17 @@
     },
     "openstreetmap": {
       "download": [
-        { "sourceURL": "https://download.geofabrik.de/europe-latest.osm.pbf" }
+        {
+          "sourceURL": "https://download.geofabrik.de/europe-latest.osm.pbf"
+        }
       ],
       "leveldbpath": "/tmp",
       "datapath": "/data/openstreetmap",
-      "import": [{
-        "filename": "europe-latest.osm.pbf"
-      }]
+      "import": [
+        {
+          "filename": "europe-latest.osm.pbf"
+        }
+      ]
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
@@ -68,17 +145,21 @@
     },
     "polyline": {
       "datapath": "/data/polylines",
-      "files": [ "europe.polyline" ]
+      "files": [
+        "europe.polyline"
+      ]
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "sqlite": true,
       "importVenues": false,
       "importPostalcodes": true,
-      "importPlace": [ "102191581" ]
+      "importPlace": [
+        "102191581"
+      ]
     },
     "csv": {
-     "datapath": "/data/geonames2dpostalcodes/",
+      "datapath": "/data/geonames2dpostalcodes/",
       "files": [],
       "download": []
     }
