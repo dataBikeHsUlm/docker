@@ -27,6 +27,12 @@
   },
   "api": {
     "targets": {
+      "canonical_sources": [
+        "whosonfirst",
+        "openstreetmap",
+        "openaddresses",
+        "geonames"
+      ],
       "layers_by_source": {
         "geonames2d": [
           "country",
