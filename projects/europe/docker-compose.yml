@@ -44,7 +44,7 @@ services:
       - "${DATA_DIR}:/data"
       - "./blacklist/:/data/blacklist"
   openstreetmap:
-    image: pelias/openstreetmap:master
+    image: pelias/openstreetmap:relations_bugfix-2019-04-25-cc778095371c142147e31249947a3b43fb57d46d
     container_name: pelias_openstreetmap
     user: "${DOCKER_USER}"
     volumes:
