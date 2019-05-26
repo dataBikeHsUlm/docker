@@ -41,6 +41,17 @@
           "source",
           "layer"
         ],
+        "geonamesandpostcodeinfo": [
+          "country",
+          "postalcode",
+          "region",
+          "2dpostalcode",
+          "c2dp",
+          "layer",
+          "lat",
+          "lon",
+          "source"
+        ],
         "openstreetmap": [
           "address",
           "venue",
