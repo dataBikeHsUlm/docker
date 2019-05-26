@@ -31,7 +31,8 @@
         "whosonfirst",
         "openstreetmap",
         "openaddresses",
-        "geonames"
+        "geonames",
+        "geonamesandpostcodeinfo"
       ],
       "layers_by_source": {
         "geonames2d": [
@@ -162,7 +163,7 @@
       "importPostalcodes": true
     },
     "csv": {
-      "datapath": "/data/geonames2dpostalcodes/",
+      "datapath": "/data/geonamesandpostcodeinfo/",
       "files": [],
       "download": []
     }
