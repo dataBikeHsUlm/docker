@@ -42,15 +42,13 @@
           "layer"
         ],
         "geonamesandpostcodeinfo": [
-          "country",
-          "postalcode",
-          "region",
-          "2dpostalcode",
-          "c2dp",
+          "name",
+          "source",
           "layer",
           "lat",
           "lon",
-          "source"
+          "country",
+          "postalcode"
         ],
         "openstreetmap": [
           "address",
